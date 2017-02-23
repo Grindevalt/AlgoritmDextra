@@ -1,26 +1,42 @@
 package com.andersenlab.vladbadilovskii;
 
+/**
+ * Created by Vlad Badilovskii on 23.02.2017.
+ */
+public class Edge {
 
-public class Edge{
-    private final int startVertex;
-    private final int finishVertex;
+    private final String id;
+    private final Vertex source;
+    private final Vertex destination;
     private final int weight;
 
-    public Edge(int startVertex, int finishVertex, int weight){
-        this.startVertex = startVertex;
-        this.finishVertex = finishVertex;
+    public Edge(String id, Vertex source, Vertex destination, int weight) {
+        this.id = id;
+        this.source = source;
+        this.destination = destination;
         this.weight = weight;
     }
 
-    public int getStartVertex() {
-        return startVertex;
+    public String getId() {
+        return id;
     }
 
-    public int getFinishVertex() {
-        return finishVertex;
+    public Vertex getDestination() {
+        return destination;
+    }
+
+    public Vertex getSource() {
+        return source;
     }
 
     public int getWeight() {
         return weight;
     }
+
+    @Override
+    public String toString() {
+        return source + " " + destination;
+    }
+
+
 }

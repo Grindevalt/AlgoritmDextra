@@ -1,10 +1,8 @@
 package com.andersenlab.vladbadilovskii;
 
-
-import java.util.ArrayList;
 import java.util.List;
 
-public class Graph{
+public class Graph {
     private final List<Vertex> vertexes;
     private final List<Edge> edges;
 
@@ -20,7 +18,4 @@ public class Graph{
     public List<Edge> getEdges() {
         return edges;
     }
-
-
-
 }
